@@ -95,8 +95,15 @@
     <Resource Include="Resources\SplitHorizontalNew.png" />
     <Resource Include="Resources\SplitNew.png" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Styles\" />
+    <Page Include="Styles\WaterMarkTextboxStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Editclear.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

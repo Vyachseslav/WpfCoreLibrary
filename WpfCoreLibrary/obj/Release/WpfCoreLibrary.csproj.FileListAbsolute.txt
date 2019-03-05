@@ -8,3 +8,7 @@ C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release
 C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary.dll
 C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary.pdb
 C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary.g.resources
+C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary.csprojAssemblyReference.cache
+C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary_MarkupCompile.cache
+C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary_MarkupCompile.lref
+C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\Styles\WaterMarkTextboxStyle.baml
