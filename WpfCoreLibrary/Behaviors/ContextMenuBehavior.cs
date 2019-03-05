@@ -1,7 +1,7 @@
 ﻿using System.Windows.Controls;
 using System.Windows.Interactivity;
 
-namespace WpfCoreLibrary.Behavior
+namespace WpfCoreLibrary.Behaviors
 {
     /// <summary>
     /// Поведение для контестного меню у GridControl.TableView

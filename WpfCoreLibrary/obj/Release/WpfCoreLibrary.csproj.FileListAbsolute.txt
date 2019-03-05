@@ -7,4 +7,3 @@ C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release
 C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary.csproj.CopyComplete
 C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary.dll
 C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary.pdb
-C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary.csprojAssemblyReference.cache
