@@ -7,7 +7,7 @@ namespace WpfCoreLibrary.Behavior
     /// <summary>
     /// Поведение для кнопки закрытия окна.
     /// </summary>
-    class CloseButtonBehavior : Behavior<Button>
+    public class CloseButtonBehavior : Behavior<Button>
     {
         protected override void OnAttached()
         {

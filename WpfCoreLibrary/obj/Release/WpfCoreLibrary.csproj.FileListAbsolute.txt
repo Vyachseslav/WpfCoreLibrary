@@ -1,0 +1,10 @@
+C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\bin\Release\WpfCoreLibrary.dll
+C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\bin\Release\WpfCoreLibrary.pdb
+C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\bin\Release\System.Windows.Interactivity.dll
+C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary.Properties.Resources.resources
+C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary.csproj.GenerateResource.cache
+C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary.csproj.CopyComplete
+C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary.dll
+C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary.pdb
+C:\Users\Вячеслав\source\repos\WpfCoreLibrary\WpfCoreLibrary\obj\Release\WpfCoreLibrary.csprojAssemblyReference.cache

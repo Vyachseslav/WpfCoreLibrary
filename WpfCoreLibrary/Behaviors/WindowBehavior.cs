@@ -7,17 +7,12 @@ using System.Xml.Serialization;
 
 namespace WpfCoreLibrary.Behaviors
 {
-    class WindowBehavior : Behavior<Window>
+    public class WindowBehavior : Behavior<Window>
     {
         /// <summary>
         /// Название приложения.
         /// </summary>
         public string ApplicationName { get; set; }
-        
-        /// <summary>
-        /// Путь к сохранению пользовательских настроек.
-        /// </summary>
-        private readonly string UserSettingsPath = GetPersonFolderPath() + "\\WindowSettings.xml";
 
         protected override void OnAttached()
         {
@@ -57,7 +52,7 @@ namespace WpfCoreLibrary.Behaviors
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(WindowSettings));
                 WindowSettings saveParameters = window;
-                using (TextWriter txtWriter = new StreamWriter(UserSettingsPath))
+                using (TextWriter txtWriter = new StreamWriter(GetPathSetting()))
                 {
                     serializer.Serialize(txtWriter, saveParameters);
                 }
@@ -76,7 +71,7 @@ namespace WpfCoreLibrary.Behaviors
         public void LoadWindowSettings()
         {
             WindowSettings window = new WindowSettings();
-            window = DeserializeFromXml(UserSettingsPath);
+            window = DeserializeFromXml(GetPathSetting());
             AssociatedObject.Width = window.Width;
             AssociatedObject.Height = window.Height;
             AssociatedObject.Left = window.Left;
@@ -110,14 +105,23 @@ namespace WpfCoreLibrary.Behaviors
         /// Получить путь до папки документы пользователя.
         /// </summary>
         /// <returns></returns>
-        public static string GetPersonFolderPath()
+        public string GetPersonFolderPath()
         {
             string md = Environment.GetFolderPath(Environment.SpecialFolder.Personal); // Путь к документам пользователя.
-            if (Directory.Exists(Path.Combine(md, "Window\\Settings")) == false)
+            if (Directory.Exists(Path.Combine(md, ApplicationName, "Window\\Settings")) == false)
             {
-                Directory.CreateDirectory(Path.Combine(md, "Window\\Settings"));
+                Directory.CreateDirectory(Path.Combine(md, ApplicationName, "Window\\Settings"));
             }
-            return Path.Combine(md, "Window\\Settings");
+            return Path.Combine(md, ApplicationName, "Window\\Settings");
+        }
+
+        /// <summary>
+        /// Вернуть путь к настройкам окна.
+        /// </summary>
+        /// <returns></returns>
+        public string GetPathSetting()
+        {
+            return Path.Combine(GetPersonFolderPath(), "WindowSettings.xml");
         }
     }
 }

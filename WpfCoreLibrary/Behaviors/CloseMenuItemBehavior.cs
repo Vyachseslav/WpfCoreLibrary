@@ -4,7 +4,7 @@ using System.Windows.Interactivity;
 
 namespace WpfCoreLibrary.Behavior
 {
-    class CloseMenuItemBehavior : Behavior<MenuItem>
+    public class CloseMenuItemBehavior : Behavior<MenuItem>
     {
         protected override void OnAttached()
         {
