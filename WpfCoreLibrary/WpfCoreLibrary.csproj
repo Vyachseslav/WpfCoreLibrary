@@ -23,7 +23,7 @@
     </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -33,7 +33,7 @@
     </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -60,7 +60,12 @@
     <Compile Include="Behaviors\ContextMenuBehavior.cs" />
     <Compile Include="Behaviors\MouseWheelBehavior.cs" />
     <Compile Include="Behaviors\WindowBehavior.cs" />
+    <Compile Include="NavigatorServices\DataGridNavigatorService.cs" />
     <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="DialogServices\StandartDialogService.cs" />
+    <Compile Include="Interfaces\IDialog.cs" />
+    <Compile Include="Interfaces\INavigator.cs" />
+    <Compile Include="Interfaces\ISearcher.cs" />
     <Compile Include="Models\WindowSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -75,6 +80,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SearchServices\SimpleFileSearch.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -85,6 +91,12 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\SplitHorizontalNew.png" />
+    <Resource Include="Resources\SplitNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Styles\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
