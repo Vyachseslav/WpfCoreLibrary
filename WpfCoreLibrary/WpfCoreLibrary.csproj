@@ -55,7 +55,13 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behaviors\CloseButtonBehavior.cs" />
+    <Compile Include="Behaviors\CloseMenuItemBehavior.cs" />
+    <Compile Include="Behaviors\ContextMenuBehavior.cs" />
+    <Compile Include="Behaviors\MouseWheelBehavior.cs" />
+    <Compile Include="Behaviors\WindowBehavior.cs" />
     <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="Models\WindowSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -69,6 +75,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ViewModels\ViewModelBase.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
